@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent layout as linear layout-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#4E6475"
+
+    tools:context=".AgeCalculatorActivity">
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Enter Your Date of Birth:"
+           android:textSize="30sp"
+           android:gravity="center"
+           android:textColor="#130202"
+           android:textStyle="bold"
+           />
+
+        <Button
+            android:id="@+id/bt_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_baseline"
+            android:text="01/01/2021"
+            android:textStyle="bold"
+            android:textColor="#970B0B"
+            android:textSize="20sp" />
+
+        <!-- displaying message as "to"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:text="To"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today Date"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+        <Button
+            android:id="@+id/bt_today"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_baseline"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="calculate" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Result"
+        android:textColor="#B71C1C"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0 Years | 0 Months | 0 Days"
+        android:textColor="#08090E"
+         android:textSize="25sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
